@@ -1,8 +1,18 @@
+# print yuv
+hexdump -v -e '64/1 "%3u " "\n"' smallyuv_64x64.yuv > smallyuv_64x64.txt 
+hexdump -v -e '128/1 "%3u " "\n"' smallyuv_128x128.yuv > smallyuv_128x128.txt 
 
+# run multi jobs from txt file
+xargs -I {} -P 4 bash -c 'echo "开始执行: {}" && {} 2>&1 | tee -a ffmpeg_run.log && echo "完成执行: {}"' < run_cmds.sh
 
-    cmdline = 'gnome-terminal -- bash -c "/mnt/u18_0/seekalpha/run_one_upload.sh; exec bash"'
-    os.system(cmdline)    
+# h264 to yuv
+ffmpeg -i test.h264 -pix_fmt yuv420p output.yuv
 
+# bash
+cmdline = 'gnome-terminal -- bash -c "/mnt/u18_0/seekalpha/run_one_upload.sh; exec bash"'
+os.system(cmdline)    
+
+# loop for batch processing
 flist=`ls input/*.mp4`
 for name in $flist
 do
@@ -45,8 +55,6 @@ if false; then
         done
     done
 fi
-
-
 
 ##################################### mac #####################################33
 
