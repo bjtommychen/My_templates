@@ -26,6 +26,7 @@ done
 
 假如说我有一段yuvi420格式的YUV，想转成nv21格式编码，可以这样转换:
 ffmpeg -s 2560x1440 -pix_fmt yuv420p -i input.yuv -pix_fmt nv21 output.yuv
+ffmpeg -s 4096x2160  -pix_fmt yuv420p -i /mnt/nas_roger/sequences/derf/Netflix_FoodMarket_4096x2160_60fps_8bit_420.yuv  -pix_fmt nv21  Netflix_FoodMarket_4096x2160_60fps_8bit_nv12.yuv
 
 if false; then
     ext=h264
