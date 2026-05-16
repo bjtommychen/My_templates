@@ -2,6 +2,7 @@
 # /ETC/HOSTS
 # add more
 # add three, in vscode
+# add again in vscode, and then copy to here, and then add more
 192.168.9.3 	fnnas
 192.168.9.3 	datasrv
 192.168.9.3		mariadb
