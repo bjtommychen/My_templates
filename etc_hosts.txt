@@ -1,5 +1,6 @@
 
 # /ETC/HOSTS
+# add more
 192.168.9.3 	fnnas
 192.168.9.3 	datasrv
 192.168.9.3		mariadb

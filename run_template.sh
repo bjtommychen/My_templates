@@ -13,6 +13,7 @@ cmdline = 'gnome-terminal -- bash -c "/mnt/u18_0/seekalpha/run_one_upload.sh; ex
 os.system(cmdline)    
 
 # loop for batch processing
+# loop for batch processing
 flist=`ls input/*.mp4`
 for name in $flist
 do
