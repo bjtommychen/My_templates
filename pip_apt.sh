@@ -18,7 +18,7 @@ wget bootstrap.pypa.io/get-pip.py
 python3.12 get-pip.py
 
 pip3 install -i https://pypi.tuna.tsinghua.edu.cn/simple --upgrade simplejson setuptools zmq requests seaborn tqdm numpy pandas joblib pymysql beautifulsoup4 lxml sqlalchemy duckdb msgpack html2text
-psutil  jupyter Flask scipy kiwisolver  deco  pyarrow scipy  scikit-learn cachetools
+psutil  jupyter Flask scipy kiwisolver  deco  pyarrow scipy  scikit-learn cachetools selenium
 pyzmq scikit-learn scikit-image pyarrow opencv-python bjontegaard tensorboardX
 
 ##use this !!!!

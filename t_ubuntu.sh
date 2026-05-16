@@ -1,6 +1,9 @@
 ### proxy
 export http_proxy="http://10.10.33.82:1081"
 export https_proxy="http://10.10.33.82:1081"
+# Bypass proxy for local server (required)
+export NO_PROXY=localhost,127.0.0.1
+
 curl https://www.google.com         # 如果proxy工作, 那么这个行可以直接运行
 git clone https://github.com/Lightning-AI/torchmetrics.git # # 如果proxy工作, 那么这个行可以直接运行
 
